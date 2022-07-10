@@ -28,6 +28,7 @@ Common Vulnerabilities and Exposures (CVE) is a dictionary of publicly known inf
 
 One should be aware that the Base Score is just a linear combination of Exploitability and Impact scores when building a model. Below are formulas for calculating Base, Exploitability and Impact scores according to NVD website:
 
+```
 BaseScore = (.6*Impact +.4*Exploitability-1.5)*f(Impact)
  
 Impact = 10.41 * (1 - (1 - ConfImpact) * (1 - IntegImpact) * (1 - AvailImpact))
@@ -36,5 +37,6 @@ Exploitability = 20 * AccessComplexity * Authentication * AccessVector
 
 f(Impact) = 0 if Impact=0; 1.176 otherwise
 
+```
 
 **Note**: The term "system" will be used as a generalized reference to all sofware and hardware products that can potentially become vulnerable to hacker attack and are mentioned on the NVD site.
