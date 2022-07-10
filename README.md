@@ -1,7 +1,7 @@
 # nvd_feeds_analysis
-The Jupyter Notebook with the analysis of NVD feeds to predict software system vulnerability issue reports.
+The Jupyter Notebook with the analysis of NVD feeds to predict software system vulnerability issue reports. It consists of three parts: extensive exploratory data analysis, predictive modeling part using LightGBM library, and results interpretation with the [SHAP tool](https://shap.readthedocs.io/en/latest/index.html). 
 
-## Outline
+## Background
 Common Vulnerabilities and Exposures (CVE) is a dictionary of publicly known information security vulnerabilities and exposures run by the MITRE Corporation. [U.S. National Vulnerability Database (NVD)](https://nvd.nist.gov) integrated this source of information in their feed with some added metrics. One can download the JSON file used in this analysis [here](https://nvd.nist.gov/feeds/json/cve/1.0/nvdcve-1.0-2018.json.zip). This file contains information about publicly known information from security vulnerabilities in software and hardware along with their corresponding exposures.
 
 **Abbreviations used in the notebook**:
